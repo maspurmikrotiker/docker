@@ -128,6 +128,7 @@ Setelah itu, lakukan peer probe pada node 1 atau node yang menjadi docker swarm 
 ```bash
 gluster peer probe docker-node2
 gluster peer probe docker-node3
+gluster peer probe docker-node4
 ```
 Cek kembali peer pool gluster yang sudah ditambahkan
 ```bash
@@ -141,9 +142,9 @@ mkdir -p /gluster/moodle-volume
 
 Kemudian buat volume glusterfs, lakukan hanya di node 1 atau node yang menjadi docker swarm manager
 ```bash
-gluster volume create staging-gfs replica 3 docker-node1:/gluster/moodle-volume docker-node2:/gluster/moodle-volume docker-node3:/gluster/moodle-volume force
+gluster volume create staging-gfs replica 4 docker-node1:/gluster/moodle-volume docker-node2:/gluster/moodle-volume docker-node3:/gluster/moodle-volume force
 ```
-```replica``` disini mengikuti jumlah node yang ada di gluster pool, jika terdapat 3 pool maka replica = 3
+```replica``` disini mengikuti jumlah node yang ada di gluster pool, jika terdapat 4 pool maka replica = 4
 Jalankan volume glusterfs
 ```bash
 gluster volume start staging-gfs
