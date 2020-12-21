@@ -118,9 +118,10 @@ nano /etc/hosts
 ```
 sebagai contoh:
 ```
-192.168.1.10 docker-node1
-192.168.1.20 docker-node2
-192.168.1.30 docker-node3
+172.16.10.11 docker-node1
+172.16.10.12 docker-node2
+172.16.10.13 docker-node3
+172.16.10.14 docker-node4
 ```
 
 Setelah itu, lakukan peer probe pada node 1 atau node yang menjadi docker swarm manager
@@ -197,3 +198,4 @@ services:
 #### lalu buka browser http://ip_node1
 
 ```
+udah ini selanjutnya tinggal scale up
