@@ -73,8 +73,8 @@ root@node1:~# docker node ls
 ## Install Portainer
 ### Download file Portainer
 ```bash
-cd && mkdir latihan6
-cd latihan6
+cd && mkdir moodle
+cd moodle
 curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
 ```
 ### Menjalankan stack Portainer
