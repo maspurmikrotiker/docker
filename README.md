@@ -173,7 +173,7 @@ df -h | grep /mnt/moodle-volume
 version: '3.8'
 services:
   moodle:
-    image: 'azemoning/moodle-redis'
+    image: 'bitnami/moodle'
     ports:
       - '80:8080'
       - '443:8443'
