@@ -142,7 +142,7 @@ mkdir -p /gluster/moodle-volume
 
 Kemudian buat volume glusterfs, lakukan hanya di node 1 atau node yang menjadi docker swarm manager
 ```bash
-gluster volume create moodle-gfs replica 4 docker-node1:/gluster/moodle-volume docker-node2:/gluster/moodle-volume docker-node3:/gluster/moodle-volume force
+gluster volume create moodle-gfs replica 4 docker-node1:/gluster/moodle-volume docker-node2:/gluster/moodle-volume docker-node3:/gluster/moodle-volume docker-node4:/gluster/moodle-volume force
 ```
 ```replica``` disini mengikuti jumlah node yang ada di gluster pool, jika terdapat 4 pool maka replica = 4
 Jalankan volume glusterfs
