@@ -23,7 +23,7 @@ network:
 
 ### Ubah Hostname di Ubuntu
 ```bash
-hostnamectl set-hostname Master
+hostnamectl set-hostname docker-node1
 ```
 ### Ubah timezone WIB
 ```bash
